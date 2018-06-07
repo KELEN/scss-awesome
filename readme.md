@@ -1,7 +1,7 @@
 cssMixins封装了一些常用的样式，帮助你快速编写样式
 
 - [定位](#position)
-    - 绝对居中
+    - [绝对居中](#absolute-center)
     
 - 形状
     - 三角形
@@ -9,7 +9,10 @@ cssMixins封装了一些常用的样式，帮助你快速编写样式
 
 ## position
 > position.scss
-### 绝对居中
+
+### absolute center
+绝对居中定位
+
 | 参数 | 值 |
 | --- | --- | 
 | 宽 | px |
