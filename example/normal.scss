@@ -1,0 +1,6 @@
+@import "../src/normal";
+
+.content {
+  width: 100px;
+  @include textEllipsis;
+}

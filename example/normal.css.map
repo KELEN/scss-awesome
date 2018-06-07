@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAYA,2BAA2B;ACV3B,QAAS;EACP,KAAK,EAAE,KAAK;EDWZ,QAAQ,EAAE,MAAM;EAChB,iBAAiB,EAAE,QAAQ;EAC3B,aAAa,EAAE,QAAQ;EACvB,cAAc,EAAE,SAAS;EACzB,UAAU,EAAE,SAAS;EACrB,aAAa,EAAE,UAAU;EACzB,SAAS,EAAE,UAAU;EACrB,WAAW,EAAE,MAAM",
+"sources": ["../src/normal.scss","normal.scss"],
+"names": [],
+"file": "normal.css"
+}

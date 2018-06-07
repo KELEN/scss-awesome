@@ -1,0 +1,13 @@
+/** text overflow ellip **/
+.content {
+  width: 100px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  white-space: nowrap; }
+
+/*# sourceMappingURL=normal.css.map */
