@@ -1,0 +1,13 @@
+.absolute-center {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+/*# sourceMappingURL=position.css.map */

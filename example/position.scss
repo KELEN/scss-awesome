@@ -1,0 +1,7 @@
+@import "../src/position";
+
+.absolute-center {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  @include absoluteCenter(200px, 300px);
+}

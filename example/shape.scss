@@ -1,0 +1,47 @@
+@import "../src/shape";
+
+.arrow-top {
+  @include triangle(top, 20px, #333);
+}
+
+.arrow-right {
+  @include triangle(right, 20px, #333);
+}
+
+.arrow-bottom {
+  @include triangle(bottom, 20px, #333);
+}
+
+.arrow-left {
+  @include triangle(left, 20px, #333);
+}
+
+.border-arrow-top {
+  @include borderTriangle(top, 20px, #333, 2px, red);
+}
+
+.border-arrow-right {
+  @include borderTriangle(right, 20px, #333, 2px, red);
+}
+
+.border-arrow-bottom {
+  @include borderTriangle(bottom, 20px, #333, 2px, red);
+}
+
+.border-arrow-left {
+  @include borderTriangle(left, 20px, #333, 2px, red);
+}
+
+.float-content {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border: 1px solid #a5a5a5;
+  background-color: #e0e0e0;
+  .arrow {
+    left: 50%;
+    top: -9px;
+    background-color: #a5a5a5;
+    @include borderTriangle(top, 18px, #e0e0e0, 1px, #a5a5a5, #e0e0e0);
+  }
+}

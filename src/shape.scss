@@ -1,0 +1,65 @@
+@import "./transform";
+@import "./normal";
+
+@mixin triangle($direction, $size, $color) {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: {
+    width: $size / 2;
+    style: solid;
+  }
+  @if $direction == top {
+    border-color: transparent transparent $color transparent;
+  }
+  @else if $direction == bottom {
+    border-color: $color transparent transparent transparent;
+  }
+  @else if $direction == left {
+    border-color: transparent $color transparent transparent;
+  }
+  @else if $direction == right {
+    border-color: transparent transparent transparent $color;
+  }
+}
+
+// overcolor: the background ground overflow triangle, default transparent
+@mixin borderTriangle($direction, $size, $color, $borderSize, $borderColor, $overColor: transparent) {
+  width: $size / 1.414;
+  height: $size / 1.414;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  background-color: $overColor;
+  position: relative;
+  cursor: pointer;
+  @include boxSizing(border-box);
+  border: {
+    width: $borderSize;
+    style: solid;
+  }
+  border-color: $borderColor $borderColor transparent transparent;
+  @if $direction == top {
+    @include transform(rotate(-45deg));
+  }
+  @else if $direction == right {
+    @include transform(rotate(45deg));
+  }
+  @else if $direction == bottom {
+    @include transform(rotate(135deg));
+  }
+  @else if $direction == left {
+    @include transform(rotate(225deg));
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: {
+      width: $size;
+      style: solid;
+    }
+    border-color: $color $color transparent transparent;
+  }
+}
