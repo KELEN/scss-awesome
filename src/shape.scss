@@ -1,6 +1,6 @@
-@import "./transform";
 @import "./normal";
 
+/** triangle **/
 @mixin triangle($direction, $size, $color) {
   width: 0;
   height: 0;
@@ -25,31 +25,30 @@
 
 // overcolor: the background ground overflow triangle, default transparent
 @mixin borderTriangle($direction, $size, $color, $borderSize, $borderColor, $overColor: transparent) {
+  position: relative;
   width: $size / 1.414;
   height: $size / 1.414;
-  display: inline-block;
   overflow: hidden;
   font-size: 0;
   background-color: $overColor;
-  position: relative;
   cursor: pointer;
-  @include boxSizing(border-box);
+  box-sizing: border-box;
   border: {
     width: $borderSize;
     style: solid;
   }
   border-color: $borderColor $borderColor transparent transparent;
   @if $direction == top {
-    @include transform(rotate(-45deg));
+   transform: rotate(-45deg);
   }
   @else if $direction == right {
-    @include transform(rotate(45deg));
+    transform: rotate(45deg);
   }
   @else if $direction == bottom {
-    @include transform(rotate(135deg));
+    transform: rotate(135deg);
   }
   @else if $direction == left {
-    @include transform(rotate(225deg));
+    transform: rotate(225deg);
   }
   &:before {
     content: '';

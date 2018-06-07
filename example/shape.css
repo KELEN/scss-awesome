@@ -1,4 +1,4 @@
-/** text overflow ellip **/
+/** triangle **/
 .arrow-top {
   width: 0;
   height: 0;
@@ -32,24 +32,17 @@
   border-color: transparent #333 transparent transparent; }
 
 .border-arrow-top {
+  position: relative;
   width: 14.14427157px;
   height: 14.14427157px;
-  display: inline-block;
   overflow: hidden;
   font-size: 0;
   background-color: transparent;
-  position: relative;
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-width: 2px;
   border-style: solid;
   border-color: red red transparent transparent;
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
   .border-arrow-top:before {
     content: '';
@@ -61,24 +54,17 @@
     border-color: #333 #333 transparent transparent; }
 
 .border-arrow-right {
+  position: relative;
   width: 14.14427157px;
   height: 14.14427157px;
-  display: inline-block;
   overflow: hidden;
   font-size: 0;
   background-color: transparent;
-  position: relative;
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-width: 2px;
   border-style: solid;
   border-color: red red transparent transparent;
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
   .border-arrow-right:before {
     content: '';
@@ -90,24 +76,17 @@
     border-color: #333 #333 transparent transparent; }
 
 .border-arrow-bottom {
+  position: relative;
   width: 14.14427157px;
   height: 14.14427157px;
-  display: inline-block;
   overflow: hidden;
   font-size: 0;
   background-color: transparent;
-  position: relative;
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-width: 2px;
   border-style: solid;
   border-color: red red transparent transparent;
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
   transform: rotate(135deg); }
   .border-arrow-bottom:before {
     content: '';
@@ -119,24 +98,17 @@
     border-color: #333 #333 transparent transparent; }
 
 .border-arrow-left {
+  position: relative;
   width: 14.14427157px;
   height: 14.14427157px;
-  display: inline-block;
   overflow: hidden;
   font-size: 0;
   background-color: transparent;
-  position: relative;
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-width: 2px;
   border-style: solid;
   border-color: red red transparent transparent;
-  -moz-transform: rotate(225deg);
-  -o-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  -webkit-transform: rotate(225deg);
   transform: rotate(225deg); }
   .border-arrow-left:before {
     content: '';
@@ -151,31 +123,26 @@
   position: relative;
   width: 200px;
   height: 100px;
-  border: 1px solid #a5a5a5;
-  background-color: #e0e0e0; }
+  border: 1px solid #c2c2c2;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  padding: 10px; }
   .float-content .arrow {
-    left: 50%;
-    top: -9px;
-    background-color: #a5a5a5;
+    position: relative;
     width: 12.729844413px;
     height: 12.729844413px;
-    display: inline-block;
     overflow: hidden;
     font-size: 0;
     background-color: #e0e0e0;
-    position: relative;
     cursor: pointer;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
-    border-color: #a5a5a5 #a5a5a5 transparent transparent;
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
+    border-color: #c2c2c2 #c2c2c2 transparent transparent;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: -7px;
+    position: absolute; }
     .float-content .arrow:before {
       content: '';
       display: inline-block;

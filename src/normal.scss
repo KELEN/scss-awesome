@@ -1,13 +1,26 @@
-@mixin boxSizing($bs) {
-  -webkit-box-sizing: $bs;
-  -moz-box-sizing: $bs;
-  box-sizing: $bs;
+@mixin disableSelect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-@mixin boxShadow($shadow) {
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  box-shadow: $shadow;
+%disableSelect {
+  @include disableSelect;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+%clearfix {
+  @include clearfix;
 }
 
 /** text overflow ellipsis **/
@@ -20,4 +33,17 @@
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   white-space: nowrap;
+}
+
+%textEllipsis {
+  @include textEllipsis;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity * 100);
+}
+
+@mixin boxShadow() {
+
 }

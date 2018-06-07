@@ -36,12 +36,14 @@
   position: relative;
   width: 200px;
   height: 100px;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #c2c2c2;
   background-color: #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
   .arrow {
+    @include borderTriangle(top, 18px, #e0e0e0, 1px, #c2c2c2, #e0e0e0);
     left: 50%;
-    top: -9px;
-    background-color: #a5a5a5;
-    @include borderTriangle(top, 18px, #e0e0e0, 1px, #a5a5a5, #e0e0e0);
+    top: -7px;
+    position: absolute;
   }
 }
