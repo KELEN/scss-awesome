@@ -4,6 +4,8 @@
 
 # 绝对居中
 
+> 兼容ie7
+
 ```scss
 @include absoluteCenter($w, $h);
 ```

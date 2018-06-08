@@ -20,7 +20,7 @@
 @extend %clearfix;
 ```
 
-# 文本溢出省略号
+### 文本溢出省略号
 
 ```scss
 @include textEllipsis;

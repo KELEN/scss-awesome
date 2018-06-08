@@ -1,0 +1,21 @@
+@import "../src/media";
+
+$mq-breakpoints: (
+  mobile: 320px
+);
+
+
+// map-get($mq-breakpoints, mobile)
+
+@include media(300px, 400px) {
+  .test {
+    font-size: 20px;
+  }
+
+  .hello {
+    color: red;
+  }
+}
+
+
+@include test();
