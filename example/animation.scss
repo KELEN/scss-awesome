@@ -1,0 +1,3 @@
+@import "../src/animation";
+
+@include transitionDelay('.list-item', 4, 200, 50);

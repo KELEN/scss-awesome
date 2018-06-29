@@ -1,0 +1,22 @@
+.markdown-section table {
+    display: table;
+    border-collapse: collapse;
+}
+
+.markdown-section tr {
+    border-top: none;
+}
+
+.markdown-section table thead {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.markdown-section th {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.markdown-section td, .markdown-section th {
+    border: none;
+    text-align: left;
+    padding: 10px;
+}

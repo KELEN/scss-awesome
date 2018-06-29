@@ -1,5 +1,5 @@
 {
-  "name": "scssmixins",
+  "name": "scss-awersome",
   "version": "1.0.0",
   "description": "cssMixins封装了一些常用的样式，帮助你快速编写样式",
   "main": "index.js",

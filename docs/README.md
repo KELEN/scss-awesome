@@ -1,4 +1,4 @@
-cssMixins封装了一些常用的样式，帮助你快速编写样式
+scss-awesome封装了一些常用的样式，帮助你快速编写样式
 
 - [常规](#normal)
     - 文本溢出
@@ -22,3 +22,6 @@ cssMixins封装了一些常用的样式，帮助你快速编写样式
 
 ## shape
 形状，对应的文件`shape.scss`
+
+## animation
+形状，对应的文件`animation.scss`
