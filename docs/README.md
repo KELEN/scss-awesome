@@ -1,5 +1,8 @@
 scss-awesome封装了一些常用的样式，帮助你快速编写样式
 
+[document](https://kelen.github.io/scss-awesome/#/)入口
+
+
 - [常规](#normal)
     - 文本溢出
 
@@ -24,4 +27,4 @@ scss-awesome封装了一些常用的样式，帮助你快速编写样式
 形状，对应的文件`shape.scss`
 
 ## animation
-形状，对应的文件`animation.scss`
+动画，对应的文件`animation.scss`
