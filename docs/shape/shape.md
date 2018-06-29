@@ -4,7 +4,7 @@
 
 生成一些常用形状样式，例如三角形
 
-### 三角形
+## 三角形
 
 ```scss
 @include tringle($direction, $size, $color);
@@ -22,7 +22,7 @@
 @include absoluteCenter(top, 20px, #333);
 ```
 
-### 带边框三角形
+## 带边框三角形
 
 主要是用来漂浮框的指示方向三角形，例如
 

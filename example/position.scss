@@ -12,3 +12,6 @@
   left: 20%;
   @extend %absoluteHorizontalCenter;
 }
+
+$sp: icon-apple, icon-banana, icon-orange, icon-pig;
+@include bgPosition($sp, 40, false);

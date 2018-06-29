@@ -3,6 +3,11 @@
   left: 50%;
   transform: translate(-50%, 0); }
 
+/**
+  $map css map
+  $size bg size
+  $tb from top to tbottom
+ */
 .absolute-center {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
   background-color: #fff;
@@ -23,5 +28,10 @@
 .horizontal-center {
   position: relative;
   left: 20%; }
+
+.icon-apple { background-position: 0 0; }
+.icon-banana { background-position: -40px 0; }
+.icon-orange { background-position: -80px 0; }
+.icon-pig { background-position: -120px 0; }
 
 /*# sourceMappingURL=position.css.map */

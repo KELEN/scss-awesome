@@ -23,3 +23,37 @@
 @mixin absoluteHorizontalCenter {
   @extend %absoluteHorizontalCenter;
 }
+
+/**
+  $map css map
+  $size bg size
+  $tb from top to tbottom
+ */
+@mixin bgPosition($list, $size, $tb: true) {
+  @if ($tb) {
+    $i: 0;
+    @each $cls in $list {
+      .#{$cls} {
+        @if $i == 0 {
+          background-position: 0 0;
+        } @else {
+          background-position: 0 -$i * $size + px;
+        }
+      }
+      $i: $i + 1;
+    }
+  } @else {
+    $i: 0;
+    @each $cls in $list {
+      .#{$cls} {
+        @if $i == 0 {
+          background-position: 0 0;
+        } @else {
+          background-position: -$i * $size + px 0;
+        }
+      }
+      $i: $i + 1;
+    }
+  }
+
+}
