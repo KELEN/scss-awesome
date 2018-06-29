@@ -1,3 +1,10 @@
+/**
+ *  $cls: classname
+ *  $len: element num
+ *  $start: start delay
+ *  $step: every step
+ *  $reverse: reverse order
+ */
 @mixin transitionDelay ($cls, $len, $start, $step, $reverse: false) {
   @if $reverse {
     $i: 0;
@@ -17,6 +24,13 @@
   }
 }
 
+/**
+ *  $cls: classname
+ *  $len: element num
+ *  $start: start delay
+ *  $step: every step
+ *  $reverse: reverse order
+ */
 @mixin animationDelay ($cls, $len, $start, $step, $reverse: false) {
   @if $reverse {
     $i: 0;

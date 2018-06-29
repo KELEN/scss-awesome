@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAWI,oCAA0B;ECD5B,KAAM;IACJ,SAAS,EAAE,IAAI;;EAGjB,MAAO;IACL,KAAK,EAAE,GAAG",
-"sources": ["../src/media.scss","media.scss"],
+"mappings": "AASE,oCAAsB;ECNtB,KAAM;IACJ,SAAS,EAAE,IAAI;;EAGjB,MAAO;IACL,KAAK,EAAE,GAAG",
+"sources": ["../src/_media.scss","media.scss"],
 "names": [],
 "file": "media.css"
 }

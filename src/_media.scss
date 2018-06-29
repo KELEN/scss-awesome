@@ -1,19 +1,15 @@
-$mediaScreens: ();
 
-@mixin media($min: false, $max: false) {
-  //$query-string: '';
-  //@media screen {
-  //  @if $min != '' {
-  //    $query-string: $query-string + 'min-width: #{ $min }';
-  //  }
-  //  @if $max != '' {
-  //    $query-string: 'max-width: #{ $max }';
-  //  }
-  //  @media (#{$query-string}) {
-  //    @content;
-  //  }
-  //}
-  @content;
+@mixin media($min: null, $max: null) {
+  $mediaQuery: 'screen';
+  @if $min {
+    $mediaQuery: $mediaQuery + ' and (min-width: #{$min}px)';
+  }
+  @if $max {
+    $mediaQuery: $mediaQuery + ' and (max-width: #{$max}px)';
+  }
+  @media #{$mediaQuery} {
+    @content;
+  }
 }
 
 @function _generate-query-string ($min, $max) {
@@ -23,8 +19,3 @@ $mediaScreens: ();
   }
   @return $query-str;
 }
-
-@mixin test () {
-  content: _generate-query-string(300px, 200px);
-}
-

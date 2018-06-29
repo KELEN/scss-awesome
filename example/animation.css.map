@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAYM,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B;;AADlD,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B;;AADlD,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B;;AADlD,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B",
+"mappings": "AAAA;;;;;;GAMG;AAoBH;;;;;;GAMG;AAbG,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B;;AADlD,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B;;AADlD,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B;;AADlD,uBAAyB;EACvB,gBAAgB,EAAE,KAA8B",
 "sources": ["../src/_animation.scss"],
 "names": [],
 "file": "animation.css"
